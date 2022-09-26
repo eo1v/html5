@@ -4,16 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        html 연습02 - 문서 제목과 콘텐츠의 제목
-    </title>
-    <style> /*style 사이에 쓰는 각주*/
-        .nationsong { width: 400px; } /* 박스의 너비 400 */
-        .rtxt { color:red; } /* 일부rtxt 클래스 글자색 */
-    </style>
+    <title>html 연습02 - 목록</title>
 </head>
 <body>
-   <div class="wrap">
+    <div class="wrap">
         <h2>비순서 목록</h2>
         <ul>
             <li>김도연
@@ -32,8 +26,8 @@
             <li>정병진</li>
             <li>박정우</li>
         </ul>
-   </div>
-    <div class="wap">
+    </div>
+    <div class="wrap">
         <h2>순서형 목록</h2>
         <ol>
             <li>순대</li>
@@ -53,40 +47,36 @@
         </dl>
     </div>
     <div class="wrap">
-            <h2>선택형 목록</h2>
-            <select name="sel" id="sel">
-                <option value="">선택안함</option>
-                <option value="http://www.google.com">구글</option>
-                <option value="http://www.naver.com">네이버</option>
-                <option value="http://www.daum.com">다음</option>
-            </select>
+        <h2>선택형 목록</h2>
+        <select name="sel" id="sel">
+            <option value="">선택안함</option>
+            <option value="http://www.google.com">구글</option>
+            <option value="http://www.naver.com">네이버</option>
+            <option value="http://www.daum.net">다음</option>
+        </select>
     </div>
     <div class="wrap">
-            <h2>펼침형 목록</h2>
-            <details>
-                <summary>자세히 보기</summary>
-                <div>
-                    오늘은 본시 수업 첫 비---<br>
-                    진부하고 따분한 내용부터 <br>
-                </div>
-            </details>
+        <h2>펼침형 목록</h2>
+        <details>
+            <summary>자세히 보기</summary>
+            <div>
+                오늘은 본시 수업 첫 번째 날~!<br>
+                진부하고, 따분한 내용 부터<br>
+                쉽게 알 수 있는 내용 까지
+            </div>
+        </details>
     </div>
     <div class="wrap">
         <h2>데이터 입력형 목록</h2>
         <form>
-            과목 : <input type="text" name="dept"
-            list="deptlist"><br><br>
+            과목 : <input type="text" name="dept" list="deptlist"><br><br>
             <datalist id="deptlist">
-                <option value="응용sw기초기술활용"></option>
+                <option value="응용SW기초기술활용"></option>
                 <option value="개발자환경구축"></option>
                 <option value="프로그래밍언어활용"></option>
                 <option value="SQL활용"></option>
-            </datalist> 
+            </datalist>
         </form>
     </div>
-    
-    
-
-
 </body>
 </html>
